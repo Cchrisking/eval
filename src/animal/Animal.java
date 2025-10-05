@@ -1,4 +1,8 @@
 package animal;
+
+import java.util.ArrayList;
+import java.util.List;
+
 class Animal {
     private boolean alive = true;
     private String name;
@@ -17,7 +21,6 @@ class Animal {
     public boolean isAlive() {
         return alive;
     }
-
     public String getName() {
         return name;
     }

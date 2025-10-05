@@ -1,5 +1,8 @@
 package animal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Zoo {
     public static void main(String[] args) {
         Mouse m = new Mouse("Jerry");
@@ -15,6 +18,25 @@ public class Zoo {
             System.out.print(animals[i].getName() + " is ");
             if (animals[i].isAlive()) System.out.println("alive");
             else System.out.println("dead");
+        }
+        // 3
+        List<Animal> aanimals = new ArrayList<Animal>();
+        aanimals.add(m);
+        aanimals.add(cat);
+        aanimals.add(tiger1);
+        aanimals.add(tiger2);
+        //4 supprimer etat dead
+        for (int i = 0; i < aanimals.size(); i++) {
+            if (!aanimals.get(i).isAlive()){
+                System.out.println(aanimals.get(i).getName()+" Is dead");
+                aanimals.remove(i);
+            }
+        }
+        for (Animal a: aanimals) {
+            if (a.isAlive()){
+                System.out.println(a.getName()+" Is alive");
+                aanimals.remove(a);
+            }
         }
     }
 }
