@@ -1,3 +1,4 @@
+package course;
 public class Vehicule {
     private String nom;
     private double  vitesse_max ;
@@ -25,6 +26,7 @@ public class Vehicule {
         return this.performance() >= autreVehicule.performance();
     }
     public boolean estDeuxroux(){
+
         return false;
     }
 }

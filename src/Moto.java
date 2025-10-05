@@ -1,3 +1,4 @@
+package course;
 public class Moto extends Vehicule{
     private boolean sidecar;
     public Moto(String nom,double vitesseMax,int poids,int niveau_carb, boolean sidecar) {

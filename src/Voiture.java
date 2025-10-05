@@ -1,3 +1,4 @@
+package course;
 public class Voiture extends Vehicule{
     String categorie;
     public Voiture(String nom,double vitesseMax,int poids,int niveau_carb){

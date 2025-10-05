@@ -29,13 +29,13 @@ public class Zoo {
         for (int i = 0; i < aanimals.size(); i++) {
             if (!aanimals.get(i).isAlive()){
                 System.out.println(aanimals.get(i).getName()+" Is dead");
-                aanimals.remove(i);
+                //aanimals.remove(i);
             }
         }
         for (Animal a: aanimals) {
-            if (a.isAlive()){
-                System.out.println(a.getName()+" Is alive");
-                aanimals.remove(a);
+            if (!a.isAlive()){
+                System.out.println(a.getName()+" Is removed");
+                //aanimals.remove(a);
             }
         }
     }

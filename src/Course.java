@@ -1,3 +1,4 @@
+package course;
 public class Course {
     public static void main(String[] args) {
         // PARTIE 1
@@ -78,6 +79,7 @@ public class Course {
         gp4.ajouter(m2);
         System.out.println(gp4.check());
         // FIN PARTIE 3
+        /*
         // PARTIE 4
         System.out.println();
         System.out.println("Test partie 4 : ");
@@ -97,5 +99,6 @@ public class Course {
         System.out.println("Troisieme  course :");
         gp2.run(11);
         // FIN PARTIE 4
+        */
     }
 }
