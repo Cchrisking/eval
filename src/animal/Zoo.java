@@ -14,11 +14,14 @@ public class Zoo {
         tiger1.meet(cat);
         cat.meet(tiger2);
         tiger2.meet(tiger1);
+        System.out.println("------------------------------------");
         for (int i = 0; i < animals.length; i++) {
             System.out.print(animals[i].getName() + " is ");
             if (animals[i].isAlive()) System.out.println("alive");
             else System.out.println("dead");
         }
+        System.out.println("B");
+        System.out.println("------------------------------------");
         // 3
         List<Animal> aanimals = new ArrayList<Animal>();
         aanimals.add(m);
@@ -28,13 +31,13 @@ public class Zoo {
         //4 supprimer etat dead
         for (int i = 0; i < aanimals.size(); i++) {
             if (!aanimals.get(i).isAlive()){
-                System.out.println(aanimals.get(i).getName()+" Is dead");
+                //System.out.println(aanimals.get(i).getName()+" Is dead");
                 //aanimals.remove(i);
             }
         }
         for (Animal a: aanimals) {
             if (!a.isAlive()){
-                System.out.println(a.getName()+" Is removed");
+                //System.out.println(a.getName()+" Is removed");
                 //aanimals.remove(a);
             }
         }

@@ -8,7 +8,15 @@ public class Moto extends Vehicule{
     public Moto(String nom,double vitesseMax,int poids,int niveau_carb) {
         super(nom,vitesseMax,poids,niveau_carb);
     }
-    public boolean esDeuxroux(){
+    public String toString(){
+        if (sidecar){
+            return super.toString()+ " Moto avec sidecar";
+        }else {
+            return super.toString();
+        }
+    }
+    @Override
+    public boolean estDeuxRoues(){
         return sidecar;
     }
 }

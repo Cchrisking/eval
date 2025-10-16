@@ -57,7 +57,6 @@ public class Course {
         System.out.println();
         System.out.println("Test partie 3 : ");
         System.out.println("----------------");
-
         GrandPrix gp1 = new GrandPrix();
         gp1.ajouter(v1);
         gp1.ajouter(v2);
@@ -67,19 +66,17 @@ public class Course {
         gp2.ajouter(vt2);
         gp2.ajouter(m2);
         System.out.println(gp2.check());
-
         GrandPrix gp3 = new GrandPrix();
         gp3.ajouter(vt1);
         gp3.ajouter(vt2);
         gp3.ajouter(m1);
         System.out.println(gp3.check());
-
         GrandPrix gp4 = new GrandPrix();
         gp4.ajouter(m1);
         gp4.ajouter(m2);
         System.out.println(gp4.check());
         // FIN PARTIE 3
-        /*
+
         // PARTIE 4
         System.out.println();
         System.out.println("Test partie 4 : ");
@@ -99,6 +96,5 @@ public class Course {
         System.out.println("Troisieme  course :");
         gp2.run(11);
         // FIN PARTIE 4
-        */
     }
 }

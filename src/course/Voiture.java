@@ -8,4 +8,10 @@ public class Voiture extends Vehicule{
         super(nom, vitesseMax, poids, niveau_carb);
         this.categorie = categorie;
     }
+    public String toString(){
+        return super.toString()+" de categorie "+categorie;
+    }
+    public String getCategorie(){
+        return categorie;
+    }
 }
