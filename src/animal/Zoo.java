@@ -1,6 +1,7 @@
 package animal;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Zoo {
@@ -29,17 +30,32 @@ public class Zoo {
         aanimals.add(tiger1);
         aanimals.add(tiger2);
         //4 supprimer etat dead
+        //mauvaise aproche mais j'accepte l'idee'
         for (int i = 0; i < aanimals.size(); i++) {
             if (!aanimals.get(i).isAlive()){
-                //System.out.println(aanimals.get(i).getName()+" Is dead");
                 //aanimals.remove(i);
             }
         }
+        //une autre mauvaise aproche mais j'accpte l'idee ;
         for (Animal a: aanimals) {
             if (!a.isAlive()){
-                //System.out.println(a.getName()+" Is removed");
                 //aanimals.remove(a);
             }
         }
+        //meilleur aproche parcours decroisant
+        for (int i = animals.length - 1; i >= 0; i--){
+            if (!aanimals.get(i).isAlive()){
+                //aanimals.remove(i);
+            }
+        }
+        //très bonne aproche avec iterator mais non aborder en cours
+        Iterator<Animal> iterator = aanimals.iterator();
+        while (iterator.hasNext()){
+            if (!iterator.next().isAlive()){
+                iterator.remove();
+            }
+        }
+        // une autre approche avec iterator interne
+
     }
 }
